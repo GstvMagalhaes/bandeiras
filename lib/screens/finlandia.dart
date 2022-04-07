@@ -8,48 +8,102 @@ class Finlandia extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        // ignore: prefer_const_literals_to_create_immutables
-        children: <Widget>[
+        children: [
           SizedBox(
-            height: 150,
-            width: 100,
-            child: Row(
-              children: [
-                SizedBox(
-                  height: 450,
-                  width: 100,
-                  child: Container(
-                    alignment: Alignment.centerRight,
-                    color: Color.fromARGB(255, 0, 44, 190),
-                  ),
-                )
-              ],
-            ),
-          ),
-          SizedBox(
-            height: 100,
-            width: 430,
+            height: 298,
+            width: 411,
             child: Container(
-              color: Color.fromARGB(255, 0, 44, 190),
-            ),
-          ),
-          SizedBox(
-            height: 430,
-            width: 100,
-            child: Row(
-              children: [
-                SizedBox(
-                  height: 500,
-                  width: 100,
-                  child: Container(
-                    alignment: Alignment.centerRight,
-                    color: Color.fromARGB(255, 0, 44, 190),
+              child: Padding(
+                padding: const EdgeInsets.all(120.5),
+                child: Text(
+                  'Finlandia',
+                  style: TextStyle(
+                    color: Colors.black87,
+                    fontWeight: FontWeight.w300,
+                    fontSize: 35,
                   ),
                 ),
-              ],
+              ),
             ),
           ),
+          SizedBox(
+            height: 30,
+          ),
+          Stack(
+            children: [
+              SizedBox(
+                height: 280,
+                width: 400,
+                child: Container(
+                  decoration: BoxDecoration(
+                      border: Border.all(color: Color.fromARGB(255, 0, 0, 0))),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 100),
+                child: SizedBox(
+                  width: 400,
+                  height: 50,
+                  child: Container(
+                    color: Color.fromARGB(255, 0, 2, 138),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 110.0),
+                child: SizedBox(
+                  width: 50,
+                  height: 280,
+                  child: Container(
+                    color: Color.fromARGB(255, 0, 2, 138),
+                  ),
+                ),
+              )
+            ],
+          ),
         ],
+        // ignore: prefer_const_literals_to_create_immutables
+        // children: <Widget>[
+        //   SizedBox(
+        //     height: 150,
+        //     width: 100,
+        //     child: Row(
+        //       children: [
+        //         SizedBox(
+        //           height: 450,
+        //           width: 100,
+        //           child: Container(
+        //             alignment: Alignment.centerRight,
+        //             color: Color.fromARGB(255, 0, 44, 190),
+        //           ),
+        //         )
+        //       ],
+        //     ),
+        //   ),
+        //   SizedBox(
+        //     height: 100,
+        //     width: 430,
+        //     child: Container(
+        //       color: Color.fromARGB(255, 0, 44, 190),
+        //     ),
+        //   ),
+        //   SizedBox(
+        //     height: 460,
+        //     width: 100,
+        //     child: Row(
+        //       children: [
+        //         SizedBox(
+        //           height: 500,
+        //           width: 100,
+        //           child: Container(
+        //             alignment: Alignment.centerRight,
+        //             color: Color.fromARGB(255, 0, 44, 190),
+        //           ),
+        //         ),
+        //       ],
+        //     ),
+        //   ),
+        // ],
       ),
       bottomSheet: SizedBox(
         child: FlatButton(
@@ -62,7 +116,7 @@ class Finlandia extends StatelessWidget {
                 textDirection: TextDirection.rtl,
                 style: TextStyle(
                   color: Color.fromARGB(255, 19, 18, 18),
-                  fontWeight: FontWeight.w200,
+                  fontWeight: FontWeight.w300,
                   fontSize: 20,
                 ),
               ),
